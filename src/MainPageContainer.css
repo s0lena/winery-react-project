@@ -1,0 +1,46 @@
+.mainPageContainer {
+    background-color: rgba(196, 40, 40, 1);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-image: url("./images/barsongrapes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .wineBottleMain {
+    height: 80vh;
+  }
+  
+  .mainPageContainer h2 {
+    font-size: 7rem;
+    color: rgba(245, 245, 245, 1);
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @media (max-width: 960px) {
+    .mainPageContainer {
+      display: flex;
+      flex-direction: column;
+      background-size: 1 vh;
+      background-repeat: repeat-y;
+      width: 100vw;
+      height: 100vh;
+    }
+    .wineBottleMain {
+      order: 3;
+    }
+  
+    .mainPageContainer .wineName {
+      font-size: 3rem;
+      margin: 5px;
+    }
+  }
+  
